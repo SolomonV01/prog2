@@ -17,7 +17,7 @@ int isPrime(int n)
 
 int main()
 {
-    if (isPrime(10) == 1)
+    if (isPrime(11) == 1)
         printf("Is Prime\n");
     else
         printf("Is Not Prime\n");

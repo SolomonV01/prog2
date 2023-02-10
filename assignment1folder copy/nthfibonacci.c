@@ -10,7 +10,7 @@ int fib(int n)
 
 int main()
 {
-    int n = 8;
+    int n = 5;
     printf("%d", fib(n));
     getchar();
     return 0;

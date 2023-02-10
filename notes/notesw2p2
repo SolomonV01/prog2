@@ -1,0 +1,48 @@
+#ifndef H_LINKED_LIST
+#define H_LINKED_LIST
+
+struct T {
+    int x;
+    int y;
+    char * z;
+};
+
+typedef struct Node_T {
+    int value;
+    struct Node_T * next;
+} Node;
+
+//header file should only have definitions
+//#pragma one does what header does
+void append_ll(Node **head, int value) 
+{
+    Node *temp = *h;
+    Node *new_node = (Node *)malloc(sizeof(Node));
+    while(temp->next != NULL) 
+    {
+        temp = temp->next;
+    }
+    temp->next = new_node;
+}
+
+void print_ll(Node **h) 
+{
+    Node * temp = *h;
+
+    while(temp != NULL) 
+    {
+        printf("%d\n", temp->value);
+        temp = temp->next;
+    }
+}
+
+void foo() 
+{
+    Node n;
+}
+
+int main(void) 
+{
+    Node *h = (Node *)malloc(sizeof(Node));
+}
+#endif
