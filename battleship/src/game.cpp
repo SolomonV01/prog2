@@ -24,4 +24,3 @@ int BaseGame::run()
     }
     return move_count;
 }
-
