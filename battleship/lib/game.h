@@ -53,8 +53,8 @@ class AssignmentGame : public BaseGame {
             potential_targets.push_back(make_pair(guess_row - 1, guess_col));
             potential_targets.push_back(make_pair(guess_row, guess_col - 1));
             for(auto target : potential_targets){
-                if((0 <= target.first <= 9) &&
-                   (0 <= target.second <= 9) &&
+                if((0 <= target.first <= 99) &&
+                   (0 <= target.second <= 99) &&
                    (this->SHOT_MAP[target.first][target.second] == 0) &&
                    (find(this->targets.begin(), this->targets.end(), target) == this->targets.end())){
                     this->targets.push_back(target);
