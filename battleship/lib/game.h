@@ -37,7 +37,6 @@ class AssignmentGame : public BaseGame {
     int solve() override {
         
         void hunt_target(){
-        // enter hunt mode when no more targets left
         int guess_row, guess_col;
         if(this->targets.empty()){
             guess_row, guess_col = this->guess_random();
@@ -46,7 +45,6 @@ class AssignmentGame : public BaseGame {
             guess_row, guess_col = this->targets.pop();
         }
         if(this->SHIP_MAP[guess_row][guess_col] == 1){
-            // add all adjacent squares to list of potential targets where possible
             vector<pair<int, int>> potential_targets;
             potential_targets.push_back(make_pair(guess_row + 1, guess_col));
             potential_targets.push_back(make_pair(guess_row, guess_col + 1));
