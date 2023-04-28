@@ -35,7 +35,6 @@ protected:
 class AssignmentGame : public BaseGame {
   protected:
     int solve() override {
-        
         void hunt_target(){
         int guess_row, guess_col;
         if(this->targets.empty()){
